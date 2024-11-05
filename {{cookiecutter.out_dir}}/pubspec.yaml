@@ -52,6 +52,21 @@ flutter_launcher_icons:
   android: true
   image_path_android: "images/icon.png"
 
+  ios: true
+  image_path_ios: "images/icon.png"
+  remove_alpha_ios: true
+
+  web:
+    generate: true
+    image_path: "images/icon.png"
+  windows:
+    generate: true
+    image_path: "images/icon.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "images/icon.png"
+
 # dart run flutter_native_splash:create
 flutter_native_splash:  
   # color or background_image is the only required parameter.  Use color to set the background
@@ -99,6 +114,8 @@ flutter_native_splash:
   # The android, ios and web parameters can be used to disable generating a splash screen on a given
   # platform.
   android: true
+  ios: true
+  web: true
 
   # Platform specific images can be specified with the following parameters, which will override
   # the respective parameter.  You may specify all, selected, or none of these parameters:
@@ -110,4 +127,7 @@ flutter_native_splash:
   #color_dark_web: "#042a49"
   image_android: "images/icon.png"
   image_dark_android: "images/icon.png"
-
+  image_ios: "images/icon.png"
+  image_dark_ios: "images/icon.png"
+  image_web: "images/icon.png"
+  image_dark_web: "images/icon.png"
