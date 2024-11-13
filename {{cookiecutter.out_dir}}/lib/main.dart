@@ -76,7 +76,7 @@ Map<String, String> environmentVariables = {};
 void main() async {
   // Configure the app to go full screen
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays([]); // Hides both the status and navigation bars
+  SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]); // Hides both the status and navigation bars
 
   if (isProduction) {
     // ignore: avoid_returning_null_for_void
