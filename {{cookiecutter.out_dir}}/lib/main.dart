@@ -76,7 +76,11 @@ Map<String, String> environmentVariables = {};
 void main() async {
   // Configure the app to go full screen
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);// Hides both the status and navigation bars
-
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      systemNavigationBarDividerColor: Colors.blue,
+      systemNavigationBarColor: Colors.blue,
+      systemNavigationBarIconBrightness: Brightness.light,
+    ))
   if (isProduction) {
     // ignore: avoid_returning_null_for_void
     debugPrint = (String? message, {int? wrapWidth}) => null;
